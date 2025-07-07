@@ -39,8 +39,8 @@ Before you begin, ensure you have the following installed:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/acri-st/moderation.git moderation
-cd moderation
+git clone https://github.com/acri-st/moderation-handling.git moderation_handling
+cd moderation_handling
 ```
 
 ## Development
