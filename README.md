@@ -55,11 +55,6 @@ Setup environment
 make setup
 ```
 
-Start the development server:
-```bash
-make start
-```
-
 To clean the project and remove node_modules and other generated files, use:
 ```bash
 make clean
