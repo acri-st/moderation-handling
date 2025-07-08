@@ -117,12 +117,6 @@ start_minikube: ## Start minikube with the defined parameters
 	@echo "Starting minikube...$(UID):$(GID)"
 	@minikube start --preload=false --kubernetes-version=1.27.9 --driver=docker -p $(MINIKUBE_PROFILE) --namespace $(NAMESPACE) --cpus=4 --memory=10240 --mount --mount-string "$(PWD)/:/project" --mount-uid $(UID) --mount-gid $(GID)
 
-start: start_minikube ## Start the development environment
-	@echo "Switching kube context..."
-	@kubectl config set-context --current --namespace=$(NAMESPACE)
-	@eval $(minikube -p $MINIKUBE_PROFILE docker-env)
-	@tilt up $(DEV_PROFILES)
-
 down: ## Stop the development environment
 	@tilt down $(DEV_PROFILES) --context $(MINIKUBE_PROFILE)
 
