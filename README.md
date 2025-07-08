@@ -1,4 +1,4 @@
-# DESP-AAS Moderation Handling
+# Moderation Handling
 
 
 ## Table of Contents
@@ -17,7 +17,7 @@
 
 ### What is the Moderation-handling microservice?
 
-The Moderation-handling microservice is a specialized component within architecture. It is responsible for redirecting moderation events in real-time, providing automated content moderation capabilities for distributed systems.
+The Moderation-handling microservice is responsible for redirecting moderation events in real-time, providing moderation management tools for distributed systems.
 
 **Key Features:**
 - **Event Processing**: Handles incoming moderation events from various sources
@@ -34,6 +34,7 @@ The Moderation-handling microservice is a specialized component within architect
 Before you begin, ensure you have the following installed:
 - **Git** 
 - **Docker** Docker is mainly used for the test suite, but can also be used to deploy the project via docker compose
+- **RabbitMQ** for message queue management of moderation events
 
 ## Installation
 
