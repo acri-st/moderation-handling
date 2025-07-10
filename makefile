@@ -24,8 +24,8 @@ else
   export $(shell sed 's/=.*//' .envdb)
 endif
 
-MINIKUBE_PROFILE := project-management-service
-NAMESPACE := project-management-service
+MINIKUBE_PROFILE := moderation-handling-service
+NAMESPACE := moderation-handling-service
 
 # Public Targets list
 .PHONY: all init start clean delete help setup check-deps
